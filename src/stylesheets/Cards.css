@@ -1,0 +1,49 @@
+.contenedor-cards{
+    width: 700px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: #032315;
+    opacity: 0.9;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    z-index: 102;
+    
+
+}
+
+.imagen-card {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+}
+
+.contenedor-datos{
+    text-align: justify;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 40px;
+}
+
+
+
+
+.name, .status, .species, .origin, .location, .episodes {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: aliceblue;
+    
+}
+
+
+
+strong {
+    font-size: larger;
+}

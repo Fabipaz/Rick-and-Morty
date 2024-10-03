@@ -1,0 +1,46 @@
+.contenedor-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #03190a;
+    opacity: 0.8;
+    padding: 10px 20px;
+    height: 200px;
+    width: 100%;
+    z-index: 102;
+}
+
+.imagen-navbar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-items: left;
+}
+
+.imagen-navbar2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-items: left;
+}
+
+.titulo-navbar {
+
+    width: 50%;
+    text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 5em;
+    color: #08BAE3;
+    z-index: 50;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+}
+
+
+.titulo-navbar {
+    -webkit-text-stroke: 6px #FFF765;
+    z-index: 49;
+}
+
+
