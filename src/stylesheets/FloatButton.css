@@ -1,0 +1,21 @@
+/* FloatingButton.css */
+.floating-button {
+    position: fixed; /* Fija la posición en la pantalla */
+    bottom: 20px;    /* Distancia desde la parte inferior */
+    right: 20px;     /* Distancia desde la derecha */
+    width: 60px;     /* Ancho del botón */
+    height: 60px;    /* Altura del botón */
+    border: none;    /* Sin borde */
+    border-radius: 50%; /* Botón circular */
+    background-color: #6200ee; /* Color de fondo */
+    color: white;    /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+.floating-button:hover {
+    background-color: #3700b3; /* Color al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}

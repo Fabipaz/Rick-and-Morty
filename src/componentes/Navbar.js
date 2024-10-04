@@ -1,8 +1,11 @@
 import React from "react";
 import "../stylesheets/Navbar.css"
+
+
 function Navbar (){
     return(
         <div className="contenedor-navbar">
+        
             <img
             className="imagen-navbar"
             src={require("../imagenes/r1.jpg")}

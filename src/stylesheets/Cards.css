@@ -47,3 +47,28 @@
 strong {
     font-size: larger;
 }
+
+.buton-videos {
+    background-color: #053d05; /* Verde neón que representa los portales */
+    border: none;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Orbitron', sans-serif; /* Estilo futurista */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .buton-videos:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al hacer hover */
+    background-color: #00e600; /* Un verde más brillante al hacer hover */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 8px 25px 0 rgba(39, 100, 55, 0.3);
+  }
+  

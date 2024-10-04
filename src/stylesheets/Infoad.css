@@ -1,0 +1,76 @@
+.infoad-container {
+    width: auto;
+    height: auto; /* Cambiado a 'auto' para que ajuste según el contenido */
+    margin: 10px 10px 20px;
+    display: flex;
+    flex-direction: column; /* Cambiado para alinear los elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Cambiado para hacer bordes más suaves */
+    padding: 20px;
+    background-color: #032315;
+    opacity: 0.9;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    z-index: 102;
+    text-align: center; /* Centrar el texto */
+}
+
+.imagen-info {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.nombre-personaje {
+    font-size: 70px; /* Ajustado para un mejor equilibrio visual */
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    color: aliceblue;
+    margin-bottom: 20px; /* Espacio entre el nombre y la lista */
+}
+
+.listas {
+    width: 80%; /* Ajustar el tamaño a 80% para que sea más pequeño que el contenedor principal */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    background-color: #032315;
+    opacity: 0.9;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    z-index: 101;
+    max-height: 300px; /* Altura máxima para evitar que crezca demasiado */
+    overflow-y: auto; /* Hacer que la lista sea desplazable si es muy larga */
+}
+
+.titulo-episodes {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.lista li {
+    font-size: 18px;
+    color: aliceblue;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+.lista li:last-child {
+    border-bottom: none;
+}
+
+.link{
+    color: aliceblue;
+}

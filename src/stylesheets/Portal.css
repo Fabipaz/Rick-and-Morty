@@ -101,9 +101,13 @@ body {
   z-index: 101; /* Asegura que el Navbar esté visible */
 }
 
-.cards {
+.cards{
   margin-top: 20px;
   z-index: 102; /* Las cards también deben estar visibles encima del portal */
+}
+.infoad{
+  margin-top: 20px;
+  z-index: 102;
 }
 
 @font-face {
