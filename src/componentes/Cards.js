@@ -14,10 +14,12 @@ function Cards({ name, status, species, image, origin, location, numeroepisodes,
         <p className="location"><strong>Location:</strong> {location}</p>
         <p className="episodes"><strong>Episodes:</strong> {numeroepisodes}</p>
         
-        {/* Pasar los datos del personaje a través de 'state' */}
+
+        
+        
         <Link 
           to="/Infoad" 
-          state={{ name, image, episodeList }} // Pasamos episodeList aquí
+          state={{ name, image, episodeList }}
         >
           <button type="button" className="buton-videos">Ver</button>
         </Link>

@@ -30,21 +30,25 @@
 }
 
 .listas {
-    width: 80%; /* Ajustar el tamaño a 80% para que sea más pequeño que el contenedor principal */
+    width: 80%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Bordes redondeados */
+    justify-content: flex-start;
+    border-radius: 10px;
     padding: 20px;
     background-color: #032315;
     opacity: 0.9;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     z-index: 101;
-    max-height: 300px; /* Altura máxima para evitar que crezca demasiado */
-    overflow-y: auto; /* Hacer que la lista sea desplazable si es muy larga */
+    max-height: 300px; 
+    overflow-y: auto;
 }
+
+
+
+
 
 .titulo-episodes {
     font-size: 24px;
@@ -73,4 +77,10 @@
 
 .link{
     color: aliceblue;
+    font-family:'Get Schwifty';
+}
+
+
+.nombre-personaje{
+    color: chartreuse;
 }

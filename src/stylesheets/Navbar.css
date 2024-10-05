@@ -1,5 +1,6 @@
 .contenedor-navbar {
     display: flex;
+    margin-bottom: 20px;
     justify-content: space-around;
     align-items: center;
     background-color: #03190a;

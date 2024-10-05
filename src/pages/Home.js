@@ -15,6 +15,7 @@ function Home() {
       const data = await response.json();
       setDatosApi(data.results);
       setLoading(false);
+      console.log(JSON.stringify(datosapi))
     } catch (error) {
       console.log("ERROR: " + error.message);
       setLoading(false);

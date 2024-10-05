@@ -1,18 +1,20 @@
-
 import React from 'react';
 import '../stylesheets/FloatButton.css'; // Importa el archivo CSS
+import { House } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-const Floatbutton = () => {
-    const handleClick = () => {
-        // Acción que deseas realizar al hacer clic en el botón
-        alert('Botón flotante clickeado!');
+const FloatButton = () => {
+    const navigate = useNavigate(); // Inicializa el hook de navegación
+
+    const accionBoton = () => {
+        navigate('/'); // Redirige a la página de inicio
     };
 
     return (
-        <button className="floating-button" onClick={handleClick}>
-            +
+        <button className="floating-button" onClick={accionBoton}>
+            <House color='black' size={48} />
         </button>
     );
 };
 
-export default Floatbutton;
+export default FloatButton;

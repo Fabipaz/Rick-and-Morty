@@ -7,7 +7,7 @@
     height: 60px;    /* Altura del botón */
     border: none;    /* Sin borde */
     border-radius: 50%; /* Botón circular */
-    background-color: #6200ee; /* Color de fondo */
+    background-color: #48b80c; /* Color de fondo */
     color: white;    /* Color del texto */
     font-size: 24px; /* Tamaño del texto */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
@@ -16,6 +16,6 @@
 }
 
 .floating-button:hover {
-    background-color: #3700b3; /* Color al pasar el ratón */
+    background-color: #c9f80d; /* Color al pasar el ratón */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }

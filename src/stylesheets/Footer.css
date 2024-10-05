@@ -1,5 +1,6 @@
 .contenedor-footer {
     display: flex;
+    margin-top: 60px;
     justify-content: space-around;
     align-items: center;
     background-color: #03190a;

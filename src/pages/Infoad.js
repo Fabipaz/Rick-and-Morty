@@ -3,21 +3,15 @@ import Portal from '../componentes/Portal';
 import Navbar from '../componentes/Navbar';
 import { useLocation } from 'react-router-dom';
 import Footer from "../componentes/Footer";
-import Floatbutton from "../componentes/FloatButton";
+import FloatButton from "../componentes/FloatButton";
 
 function Infoad() {
   const location = useLocation();
-  const { name, image, episodeList } = location.state || {}; // Asegúrate de usar el nombre 'episodeList'
+  const { name, image, episodeList } = location.state || {};
 
-  // Función para extraer el número de episodio de la URL
-  const getEpisodeNumber = (episodeUrl) => {
-    return parseInt(episodeUrl.split("/").pop(), 10);
-  };
-
-  // Ordenar la lista de episodios por número de episodio
-  const sortedEpisodeList = episodeList
-    ? [...episodeList].sort((a, b) => getEpisodeNumber(a) - getEpisodeNumber(b))
-    : [];
+  // Imprime cuántos episodios recibiste y la lista completa para verificación
+  console.log(`Total de episodios recibidos: ${episodeList.length}`);
+  console.log('Lista completa de episodios recibidos:', episodeList);
 
   return (
     <>
@@ -27,17 +21,16 @@ function Infoad() {
         <div className="infoad-container">
           <h1 className="nombre-personaje">{name}</h1>
           <img className="imagen-info" src={image} alt={name} />
-          
+          <h2 className="titulo-episodes">Episodios:</h2>
           <div className="listas">
-            <h2 className="titulo-episodes">Episodes:</h2>
             <ul className="lista">
-              {sortedEpisodeList && sortedEpisodeList.length > 0 ? (
-                sortedEpisodeList.map((episodeUrl, index) => {
-                  const episodeNumber = getEpisodeNumber(episodeUrl);
+              {episodeList && episodeList.length > 0 ? (
+                episodeList.map((episode, index) => {
+                  const episodeNumber = episode.split('/').pop(); // Extraemos el número del episodio de la URL
                   return (
                     <li key={index}>
-                      <a className="link" href={episodeUrl} target="_blank" rel="noopener noreferrer">
-                        {`Episode ${episodeNumber}`}
+                      <a className="link" href={episode} target="_blank" rel="noopener noreferrer">
+                        {`Episodio ${episodeNumber}`}  {/* Usamos el número real del episodio */}
                       </a>
                     </li>
                   );
@@ -48,9 +41,11 @@ function Infoad() {
             </ul>
           </div>
         </div>
-        <Footer/>
-        <Floatbutton/>
-      </div>
+      </div>  
+      
+      <Footer/>
+      <FloatButton/>
+      
     </>
   );
 }
