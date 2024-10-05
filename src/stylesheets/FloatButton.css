@@ -17,5 +17,5 @@
 
 .floating-button:hover {
     background-color: #c9f80d; /* Color al pasar el ratón */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
